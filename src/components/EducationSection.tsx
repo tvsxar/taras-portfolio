@@ -9,7 +9,7 @@ function EducationSection() {
                     BACKGROUND
                 </h3>
 
-                <h2 className="text-xl sm:text-2xl font-black mb-6">
+                <h2 className="text-xl sm:text-2xl font-black mb-6 text-black">
                     Education
                 </h2>
 

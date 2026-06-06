@@ -25,7 +25,7 @@ function AboutHero() {
                             ABOUT ME
                         </h3>
 
-                        <h1 className="text-xl md:text-3xl font-black leading-tight">
+                        <h1 className="text-xl md:text-3xl font-black leading-tight text-black">
                             Taras Poiatsyka
                         </h1>
 
