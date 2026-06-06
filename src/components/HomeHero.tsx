@@ -17,7 +17,7 @@ function HomeHero() {
                         </span>
                     </div>
 
-                    <h1 className="text-4xl md:text-6xl font-black leading-tight">
+                    <h1 className="text-4xl md:text-6xl font-black leading-tight text-black">
                         Hi, I'm Taras Poiatsyka
                     </h1>
 

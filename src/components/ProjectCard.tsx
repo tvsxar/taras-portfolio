@@ -43,7 +43,7 @@ function ProjectCard({ project }: ProjectCardProps) {
             </div>
 
             <div className="p-4 flex flex-col gap-3">
-                <h4 className="text-base sm:text-lg font-bold">
+                <h4 className="text-base sm:text-lg font-bold text-black">
                     {title}
                 </h4>
 

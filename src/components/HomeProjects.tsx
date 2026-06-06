@@ -15,7 +15,7 @@ function HomeProjects() {
                             FEATURED WORK
                         </h3>
 
-                        <h2 className="text-2xl sm:text-3xl font-black">
+                        <h2 className="text-2xl sm:text-3xl font-black text-black">
                             Projects I've built
                         </h2>
                     </div>

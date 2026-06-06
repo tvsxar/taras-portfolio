@@ -4,7 +4,7 @@ import HomeProjects from "@/components/HomeProjects";
 
 export default function Home() {
   return (
-    <div className="text-xl">
+    <div className="text-xl bg-white">
       <HomeHero />
 
       <TechStack />
