@@ -27,6 +27,8 @@ function ProjectCard({ project }: ProjectCardProps) {
                 border
                 border-gray-200
                 bg-white
+                flex
+                flex-col
                 transition-all
                 duration-200
                 hover:-translate-y-1
@@ -42,8 +44,8 @@ function ProjectCard({ project }: ProjectCardProps) {
                 />
             </div>
 
-            <div className="p-4 flex flex-col gap-3">
-                <h4 className="text-base sm:text-lg font-bold">
+            <div className="p-4 flex flex-col flex-1">
+                <h4 className="text-base sm:text-lg font-bold text-black">
                     {title}
                 </h4>
 
@@ -92,7 +94,7 @@ function ProjectCard({ project }: ProjectCardProps) {
                     )}
                 </div>
 
-                <div className="flex flex-col sm:flex-row items-center gap-2 mt-6">
+                <div className="flex flex-col sm:flex-row items-center gap-2 mt-auto pt-6">
                     <a
                         href={code}
                         className="

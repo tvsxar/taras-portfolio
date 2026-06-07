@@ -25,7 +25,7 @@ function SkillsSection() {
                     EXPERTISE
                 </h3>
 
-                <h2 className="text-xl sm:text-2xl font-black mb-4">
+                <h2 className="text-xl sm:text-2xl font-black mb-4 text-black">
                     Skills & Technologies
                 </h2>
 

@@ -10,7 +10,7 @@ export default function ProjectsPage() {
                         <h3 className="text-xs text-gray-500 font-bold tracking-widest">
                             PORTFOLIO
                         </h3>
-                        <h1 className="text-2xl sm:text-3xl md:text-4xl font-black">
+                        <h1 className="text-2xl sm:text-3xl md:text-4xl font-black text-black">
                             All Projects
                         </h1>
                         <p className="mt-4 max-w-2xl text-sm sm:text-base text-gray-500 leading-relaxed">
