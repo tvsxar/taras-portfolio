@@ -4,14 +4,8 @@ import ContactForm from '@/components/ContactForm';
 function ContactsPage() {
     return (
         <div className="bg-white">
-            <section className="
-                max-w-6xl mx-auto px-6 
-                py-16 md:py-24 
-                flex flex-col md:flex-row 
-                gap-10 md:gap-12 
-                items-stretch
-            ">
-                <div className="flex flex-col flex-1 items-center md:items-start text-center md:text-left">
+            <section className="max-w-6xl mx-auto px-6 py-16 md:py-24 flex flex-col md:flex-row gap-10 md:gap-12 items-center md:items-stretch">
+                <div className="flex flex-col flex-1 w-full items-center md:items-start text-center md:text-left">
                     <div>
                         <h3 className="text-xs text-gray-500 font-bold tracking-widest">
                             CONTACT
@@ -57,12 +51,7 @@ function ContactsPage() {
                     </div>
                 </div>
 
-                <div className="
-                    w-full 
-                    md:flex-1 
-                    flex 
-                    justify-center md:justify-end
-                ">
+                <div className="w-full md:flex-1 flex justify-center md:justify-end items-stretch">
                     <ContactForm />
                 </div>
             </section>

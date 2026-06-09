@@ -5,14 +5,14 @@ function ContactForm() {
         <div className="border border-gray-200 shadow-md p-6 rounded-xl w-full max-w-xl mx-auto">
             <form className="flex flex-col gap-5">
 
-                <h2 className="text-xl font-semibold">
+                <h2 className="text-xl font-semibold text-black">
                     Send a message
                 </h2>
 
                 <div className="flex flex-col sm:flex-row gap-4 mt-2">
 
                     <div className="flex flex-col flex-1 w-full">
-                        <label className="font-semibold text-sm">
+                        <label className="font-semibold text-sm text-gray-700">
                             Name
                         </label>
 
@@ -28,12 +28,13 @@ function ContactForm() {
                                 outline-none
                                 focus:border-black
                                 transition
+                                placeholder-gray-500
                             "
                         />
                     </div>
 
                     <div className="flex flex-col flex-1 w-full">
-                        <label className="font-semibold text-sm">
+                        <label className="font-semibold text-sm text-gray-700">
                             Email
                         </label>
 
@@ -49,6 +50,7 @@ function ContactForm() {
                                 outline-none
                                 focus:border-black
                                 transition
+                                placeholder-gray-500
                             "
                         />
                     </div>
@@ -74,6 +76,7 @@ function ContactForm() {
                             transition
                             focus:border-black
                             focus:ring-2 focus:ring-black/10
+                            placeholder-gray-500
                         "
                     />
                 </div>
