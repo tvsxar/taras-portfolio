@@ -29,7 +29,7 @@ function Navbar() {
     }, [])
 
     return (
-        <div className="border-b border-gray-200 bg-white shadow-md md:bg-white/20 backdrop-blur-sm fixed top-0 left-0 w-full z-50">
+        <div className="border-b border-gray-200 bg-white shadow-md md:bg-white/20 backdrop-blur-sm sticky top-0 left-0 w-full z-50">
             <div className="flex items-center justify-between max-w-6xl mx-auto py-4 px-6 relative z-30">
 
                 <div className="flex items-center gap-2">
