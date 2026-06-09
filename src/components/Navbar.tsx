@@ -95,14 +95,14 @@ function Navbar() {
                             </li>
 
                             <li className={
-                                current === 'contacts'
+                                current === 'contact'
                                     ? 'bg-gray-100 text-black rounded-md w-full'
                                     : 'text-gray-600 hover:text-black hover:bg-gray-50 rounded-md transition-colors duration-150 w-full'
                             }>
                                 <Link
-                                    href="/contacts"
+                                    href="/contact"
                                     onClick={() => setIsMobileMenuOpen(false)}
-                                    className="block text-md font-medium px-3 py-1 w-full">Contacts</Link>
+                                    className="block text-md font-medium px-3 py-1 w-full">Contact</Link>
                             </li>
                         </ul>
                     </div>
@@ -141,12 +141,12 @@ function Navbar() {
                     </li>
 
                     <li className={
-                        current === 'contacts'
+                        current === 'contact'
                             ? 'bg-gray-300/20 backdrop-blur-sm text-black rounded-md'
                             : 'text-gray-600 hover:text-black hover:bg-gray-200/20 rounded-md transition-colors duration-150'
                     }>
-                        <Link href="/contacts" className="block text-sm font-medium px-3 py-1">
-                            Contacts
+                        <Link href="/contact" className="block text-sm font-medium px-3 py-1">
+                            Contact
                         </Link>
                     </li>
                 </ul>
