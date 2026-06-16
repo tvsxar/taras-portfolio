@@ -1,9 +1,58 @@
+'use client'
+
+import { useState } from 'react';
 import { Send } from 'lucide-react';
 
 function ContactForm() {
+    const [error, setError] = useState('');
+    const [success, setSuccess] = useState(false);
+    const [loading, setLoading] = useState(false);
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: ''
+    });
+
+    const handleSendMessage = async (e: React.FormEvent) => {
+        e.preventDefault();
+
+        setLoading(true);
+        setError('');
+        setSuccess(false);
+        try {
+            const res = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ ...formData })
+            });
+            const data = await res.json();
+
+            if (!res.ok) {
+                setError(data?.error || "Something went wrong");
+                return;
+            }
+            setSuccess(true);
+
+            setFormData({
+                name: '',
+                email: '',
+                message: ''
+            });
+        } catch (err) {
+            setError("Network error");
+            console.error('Network error')
+        } finally {
+            setLoading(false);
+        }
+    }
+
     return (
         <div className="border border-gray-200 shadow-md p-6 rounded-xl w-full max-w-xl mx-auto">
-            <form className="flex flex-col gap-5">
+            <form
+                onSubmit={handleSendMessage}
+                className="flex flex-col gap-5">
 
                 <h2 className="text-xl font-semibold text-black">
                     Send a message
