@@ -13,6 +13,13 @@ function ContactForm() {
         message: ''
     });
 
+    const handleInput = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        setFormData(prev => ({
+            ...prev,
+            [e.target.name]: e.target.value
+        }))
+    }
+
     const handleSendMessage = async (e: React.FormEvent) => {
         e.preventDefault();
 
@@ -67,6 +74,9 @@ function ContactForm() {
 
                         <input
                             type="text"
+                            name='name'
+                            onChange={handleInput}
+                            value={formData.name}
                             placeholder="Your name"
                             className="
                                 w-full
@@ -89,6 +99,9 @@ function ContactForm() {
 
                         <input
                             type="email"
+                            name='email'
+                            onChange={handleInput}
+                            value={formData.email}
                             placeholder="your@email.com"
                             className="
                                 w-full
@@ -113,6 +126,9 @@ function ContactForm() {
 
                     <textarea
                         placeholder="Tell me about your project..."
+                        name='message'
+                        onChange={handleInput}
+                        value={formData.message}
                         className="
                             w-full
                             h-40 sm:h-48
@@ -131,6 +147,7 @@ function ContactForm() {
                 </div>
 
                 <button
+                    disabled={loading}
                     className="
                         flex items-center justify-center gap-3
                         bg-black text-white
