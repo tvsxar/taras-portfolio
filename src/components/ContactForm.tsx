@@ -149,20 +149,40 @@ function ContactForm() {
                 <button
                     disabled={loading}
                     className="
-                        flex items-center justify-center gap-3
-                        bg-black text-white
-                        p-3 rounded-lg
-                        font-semibold
-                        cursor-pointer
-                        hover:bg-black/90
-                        active:scale-[0.99]
-                        transition
-                        w-full
-                    "
+        flex items-center justify-center gap-3
+        bg-black text-white
+        p-3 rounded-lg
+        font-semibold
+        cursor-pointer
+        hover:bg-black/90
+        active:scale-[0.99]
+        transition
+        w-full
+        disabled:opacity-60
+        disabled:cursor-not-allowed
+    "
                 >
-                    <Send size={14} className="shrink-0" />
-                    Send message
+                    {loading ? (
+                        "Sending..."
+                    ) : (
+                        <>
+                            <Send size={14} className="shrink-0" />
+                            Send message
+                        </>
+                    )}
                 </button>
+
+                {error && (
+                    <p className="text-sm text-red-500 mt-2">
+                        {error}
+                    </p>
+                )}
+
+                {success && (
+                    <p className="text-sm text-green-600 mt-2">
+                        Message sent successfully!
+                    </p>
+                )}
 
             </form>
         </div>
