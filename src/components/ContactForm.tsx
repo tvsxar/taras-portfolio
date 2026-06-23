@@ -1,9 +1,65 @@
+'use client'
+
+import { useState } from 'react';
 import { Send } from 'lucide-react';
 
 function ContactForm() {
+    const [error, setError] = useState('');
+    const [success, setSuccess] = useState(false);
+    const [loading, setLoading] = useState(false);
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: ''
+    });
+
+    const handleInput = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        setFormData(prev => ({
+            ...prev,
+            [e.target.name]: e.target.value
+        }))
+    }
+
+    const handleSendMessage = async (e: React.FormEvent) => {
+        e.preventDefault();
+
+        setLoading(true);
+        setError('');
+        setSuccess(false);
+        try {
+            const res = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ ...formData })
+            });
+            const data = await res.json();
+
+            if (!res.ok) {
+                setError(data?.error || "Something went wrong");
+                return;
+            }
+            setSuccess(true);
+
+            setFormData({
+                name: '',
+                email: '',
+                message: ''
+            });
+        } catch (err) {
+            setError("Network error");
+            console.error('Network error')
+        } finally {
+            setLoading(false);
+        }
+    }
+
     return (
         <div className="border border-gray-200 shadow-md p-6 rounded-xl w-full max-w-xl mx-auto">
-            <form className="flex flex-col gap-5">
+            <form
+                onSubmit={handleSendMessage}
+                className="flex flex-col gap-5">
 
                 <h2 className="text-xl font-semibold text-black">
                     Send a message
@@ -18,6 +74,9 @@ function ContactForm() {
 
                         <input
                             type="text"
+                            name='name'
+                            onChange={handleInput}
+                            value={formData.name}
                             placeholder="Your name"
                             className="
                                 w-full
@@ -40,6 +99,9 @@ function ContactForm() {
 
                         <input
                             type="email"
+                            name='email'
+                            onChange={handleInput}
+                            value={formData.email}
                             placeholder="your@email.com"
                             className="
                                 w-full
@@ -64,6 +126,9 @@ function ContactForm() {
 
                     <textarea
                         placeholder="Tell me about your project..."
+                        name='message'
+                        onChange={handleInput}
+                        value={formData.message}
                         className="
                             w-full
                             h-40 sm:h-48
@@ -82,21 +147,42 @@ function ContactForm() {
                 </div>
 
                 <button
+                    disabled={loading}
                     className="
-                        flex items-center justify-center gap-3
-                        bg-black text-white
-                        p-3 rounded-lg
-                        font-semibold
-                        cursor-pointer
-                        hover:bg-black/90
-                        active:scale-[0.99]
-                        transition
-                        w-full
-                    "
+        flex items-center justify-center gap-3
+        bg-black text-white
+        p-3 rounded-lg
+        font-semibold
+        cursor-pointer
+        hover:bg-black/90
+        active:scale-[0.99]
+        transition
+        w-full
+        disabled:opacity-60
+        disabled:cursor-not-allowed
+    "
                 >
-                    <Send size={14} className="shrink-0" />
-                    Send message
+                    {loading ? (
+                        "Sending..."
+                    ) : (
+                        <>
+                            <Send size={14} className="shrink-0" />
+                            Send message
+                        </>
+                    )}
                 </button>
+
+                {error && (
+                    <p className="text-sm text-red-500 mt-2">
+                        {error}
+                    </p>
+                )}
+
+                {success && (
+                    <p className="text-sm text-green-600 mt-2">
+                        Message sent successfully!
+                    </p>
+                )}
 
             </form>
         </div>
