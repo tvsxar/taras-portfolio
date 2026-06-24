@@ -15,6 +15,10 @@ function Navbar() {
         setIsMobileMenuOpen((prev) => !prev);
     }
 
+    const handleChangeTheme = () => {
+        document.documentElement.classList.toggle('dark');
+    }
+
     useEffect(() => {
         const handleClickOutside = (e: MouseEvent) => {
             if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
@@ -152,7 +156,9 @@ function Navbar() {
                 </ul>
 
                 <div className="items-center hidden md:flex">
-                    <button className="cursor-pointer text-gray-700 hover:text-black transition-colors">
+                    <button 
+                    onClick={handleChangeTheme}
+                    className="cursor-pointer text-gray-700 hover:text-black transition-colors">
                         <Sun size={20} />
                     </button>
                 </div>
