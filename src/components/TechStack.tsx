@@ -32,7 +32,7 @@ function TechStack() {
                     {[...techs, ...techs].map((tech, index) => (
                         <div
                             key={index}
-                            className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-200 bg-white dark:bg-[#16171a] font-medium border border-gray-200 rounded-md py-2 px-4 whitespace-nowrap"
+                            className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-200 bg-white dark:bg-[#16171a] font-medium border border-gray-200 dark:border-gray-50/30 rounded-md py-2 px-4 whitespace-nowrap"
                         >
                             <div className="w-1.5 h-1.5 rounded-full bg-gray-400 dark:bg-gray-200" />
                             {tech}
