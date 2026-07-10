@@ -56,19 +56,19 @@ function ContactForm() {
     }
 
     return (
-        <div className="border border-gray-200 shadow-md p-6 rounded-xl w-full max-w-xl mx-auto">
+        <div className="border border-gray-200 dark:border-gray-50/30 shadow-md p-6 rounded-xl w-full max-w-xl mx-auto">
             <form
                 onSubmit={handleSendMessage}
                 className="flex flex-col gap-5">
 
-                <h2 className="text-xl font-semibold text-black">
+                <h2 className="text-xl font-semibold text-black dark:text-white">
                     Send a message
                 </h2>
 
                 <div className="flex flex-col sm:flex-row gap-4 mt-2">
 
                     <div className="flex flex-col flex-1 w-full">
-                        <label className="font-semibold text-sm text-gray-700">
+                        <label className="font-semibold text-sm text-gray-700 dark:text-gray-300">
                             Name
                         </label>
 
@@ -80,20 +80,20 @@ function ContactForm() {
                             placeholder="Your name"
                             className="
                                 w-full
-                                border border-gray-200
+                                border border-gray-200 dark:border-gray-50/30
                                 rounded-md
                                 px-3 py-2
                                 text-sm
                                 outline-none
-                                focus:border-black
+                                focus:border-black dark:focus:border-gray-100
                                 transition
-                                placeholder-gray-500
+                                placeholder-gray-500 dark:placeholder-gray-300
                             "
                         />
                     </div>
 
                     <div className="flex flex-col flex-1 w-full">
-                        <label className="font-semibold text-sm text-gray-700">
+                        <label className="font-semibold text-sm text-gray-700 dark:text-gray-300">
                             Email
                         </label>
 
@@ -105,14 +105,14 @@ function ContactForm() {
                             placeholder="your@email.com"
                             className="
                                 w-full
-                                border border-gray-200
+                                border border-gray-200 dark:border-gray-50/30
                                 rounded-md
                                 px-3 py-2
                                 text-sm
                                 outline-none
-                                focus:border-black
+                                focus:border-black dark:focus:border-gray-100
                                 transition
-                                placeholder-gray-500
+                               placeholder-gray-500 dark:placeholder-gray-300
                             "
                         />
                     </div>
@@ -120,7 +120,7 @@ function ContactForm() {
                 </div>
 
                 <div className="flex flex-col gap-1">
-                    <label className="text-sm font-semibold text-gray-700">
+                    <label className="text-sm font-semibold text-gray-700 dark:text-gray-300">
                         Message
                     </label>
 
@@ -133,15 +133,14 @@ function ContactForm() {
                             w-full
                             h-40 sm:h-48
                             resize-none
-                            border border-gray-200
+                            border border-gray-200 dark:border-gray-50/30
                             rounded-xl
                             px-3 py-3
                             text-sm
                             outline-none
                             transition
-                            focus:border-black
-                            focus:ring-2 focus:ring-black/10
-                            placeholder-gray-500
+                            focus:border-black dark:focus:border-gray-100
+                            placeholder-gray-500 dark:placeholder-gray-300
                         "
                     />
                 </div>
@@ -150,11 +149,11 @@ function ContactForm() {
                     disabled={loading}
                     className="
         flex items-center justify-center gap-3
-        bg-black text-white
+        bg-black text-white dark:bg-gray-100 dark:text-black
         p-3 rounded-lg
         font-semibold
         cursor-pointer
-        hover:bg-black/90
+        hover:bg-black/90 dark:hover:bg-gray-300
         active:scale-[0.99]
         transition
         w-full
