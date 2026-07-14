@@ -25,8 +25,8 @@ function ProjectCard({ project }: ProjectCardProps) {
                 w-full
                 rounded-xl
                 border
-                border-gray-200
-                bg-white
+                border-gray-200 dark:border-gray-50/30
+                bg-white dark:bg-[#1d1e22]
                 flex
                 flex-col
                 transition-all
@@ -35,7 +35,7 @@ function ProjectCard({ project }: ProjectCardProps) {
                 hover:shadow-lg
             "
         >
-            <div className="relative w-full h-40 sm:h-48 bg-gray-100 rounded-t-xl overflow-hidden">
+            <div className="relative w-full h-40 sm:h-48 bg-gray-100 dark:bg-[#1d1e22] rounded-t-xl overflow-hidden">
                 <Image
                     src={image}
                     alt={title}
@@ -45,11 +45,11 @@ function ProjectCard({ project }: ProjectCardProps) {
             </div>
 
             <div className="p-4 flex flex-col flex-1">
-                <h4 className="text-base sm:text-lg font-bold text-black">
+                <h4 className="text-base sm:text-lg font-bold text-black dark:text-gray-100">
                     {title}
                 </h4>
 
-                <p className="text-sm font-medium text-gray-500 leading-relaxed">
+                <p className="text-sm font-medium text-gray-500 dark:text-gray-300 leading-relaxed">
                     {description}
                 </p>
 
@@ -60,10 +60,10 @@ function ProjectCard({ project }: ProjectCardProps) {
                             className="
                                 text-xs
                                 font-semibold
-                                text-gray-500
-                                bg-gray-50
+                                text-gray-500 dark:text-gray-300
+                                bg-gray-50 dark:bg-[#16171a]
                                 border
-                                border-gray-200
+                                border-gray-200 dark:border-gray-50/30
                                 rounded-lg
                                 py-1
                                 px-2
@@ -79,10 +79,10 @@ function ProjectCard({ project }: ProjectCardProps) {
                             className="
                                 text-xs
                                 font-semibold
-                                text-gray-500
-                                bg-gray-50
+                                text-gray-500 dark:text-gray-300
+                                bg-gray-50 dark:bg-[#16171a]
                                 border
-                                border-gray-200
+                                border-gray-200 dark:border-gray-50/30
                                 rounded-lg
                                 py-1
                                 px-2
@@ -106,11 +106,11 @@ function ProjectCard({ project }: ProjectCardProps) {
                             h-10
                             text-sm
                             font-semibold
-                            text-black
+                            text-black dark:text-white
                             border
-                            border-gray-300
+                            border-gray-300 dark:border-gray-600
                             rounded-lg
-                            hover:bg-gray-100
+                            hover:bg-gray-100 dark:hover:bg-gray-500
                             transition-colors
                         "
                     >
@@ -129,10 +129,10 @@ function ProjectCard({ project }: ProjectCardProps) {
                             h-10
                             text-sm
                             font-semibold
-                            text-white
-                            bg-black
+                            text-white dark:text-black
+                            bg-black dark:bg-gray-100
                             rounded-lg
-                            hover:bg-black/80
+                            hover:bg-black/80 dark:hover:bg-gray-300
                             transition-colors
                         "
                     >

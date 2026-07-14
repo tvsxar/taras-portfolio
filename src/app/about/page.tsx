@@ -5,7 +5,7 @@ import EducationSection from "@/components/EducationSection";
 
 export default function AboutPage() {
   return (
-    <div className="text-xl bg-white">
+    <div className="text-xl bg-white dark:bg-[#16171a]">
       <AboutHero />
 
       <SkillsSection />
