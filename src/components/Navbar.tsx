@@ -46,7 +46,15 @@ function Navbar() {
                     </p>
                 </div>
 
-                <div className="flex items-center md:hidden">
+                <div className="flex items-center gap-5 md:hidden">
+                    <div className="items-center flex md:hidden">
+                        <button
+                            onClick={handleChangeTheme}
+                            className="cursor-pointer text-gray-700 dark:text-gray-100 hover:text-black dark:hover:text-gray-300 transition-colors">
+                            <Sun size={20} />
+                        </button>
+                    </div>
+
                     <button
                         onClick={toggleMobileMenu}
                         className="cursor-pointer text-gray-700 dark:text-gray-100 hover:text-black transition-colors md:hidden">
