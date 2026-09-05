@@ -30,18 +30,22 @@ function AboutHero() {
                         </h1>
 
                         <h2 className="text-sm md:text-lg font-semibold text-gray-500 dark:text-gray-300">
-                            Frontend & Fullstack Developer
+                            Software Engineer | Full-Stack JavaScript
                         </h2>
                     </div>
 
                     <p className="text-gray-500 text-xs md:text-sm font-medium leading-relaxed dark:text-gray-300">
-                        I build modern web applications focused on clean UI, performance, and usability.
-                        My main focus is creating responsive and well-structured frontend interfaces that solve real user needs.
+                        I’m a JavaScript developer with commercial experience building and maintaining
+                        production applications using React, Next.js, TypeScript, and Node.js. I work
+                        across frontend and backend development, from responsive interfaces and reusable
+                        components to APIs, application logic, and data.
                     </p>
 
                     <p className="text-gray-500 text-xs md:text-sm font-medium leading-relaxed dark:text-gray-300">
-                        Currently, I’m improving my development skills by working on real projects and gaining practical experience.
-                        I’m focusing on writing better code, understanding application architecture, and strengthening my problem-solving abilities as a developer.
+                        I care about writing maintainable and testable software and enjoy working on
+                        real products where I can solve problems across the application stack. My
+                        experience includes automated testing, debugging, code reviews, Agile/Scrum
+                        development, and CI/CD workflows.
                     </p>
 
                     <div className="flex flex-col gap-2">

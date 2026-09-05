@@ -20,6 +20,9 @@ function Navbar() {
     }
 
     useEffect(() => {
+        const media = window.matchMedia('(prefers-color-scheme: dark)');
+        document.documentElement.classList.toggle('dark', !media.matches);
+
         const handleClickOutside = (e: MouseEvent) => {
             if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
                 setIsMobileMenuOpen(false);

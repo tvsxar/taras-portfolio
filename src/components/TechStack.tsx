@@ -3,17 +3,19 @@ function TechStack() {
         "React",
         "Next.js",
         "TypeScript",
+        "JavaScript",
         "Node.js",
-        "Express",
+        "Express.js",
         "MongoDB",
         "PostgreSQL",
-        "Tailwind",
+        "REST APIs",
         "GraphQL",
+        "Firebase",
+        "Tailwind CSS",
+        "Jest",
+        "Vitest",
         "Docker",
-        "Git",
-        "Figma",
-        "Vercel",
-        "REST APIs"
+        "Git"
     ];
 
     return (

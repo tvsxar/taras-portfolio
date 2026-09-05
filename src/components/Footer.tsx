@@ -9,7 +9,7 @@ function Footer() {
                         </h3>
 
                         <p className="text-gray-600 dark:text-gray-300 text-sm mt-1">
-                            Fullstack Developer
+                            Software Engineer
                         </p>
                     </div>
 

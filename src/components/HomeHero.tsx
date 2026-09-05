@@ -1,7 +1,7 @@
-import Link from 'next/link';
-import Image from 'next/image';
+import Link from "next/link";
+import Image from "next/image";
 
-import { Download, ArrowRight } from 'lucide-react';
+import { Download, ArrowRight } from "lucide-react";
 
 function HomeHero() {
     return (
@@ -22,19 +22,22 @@ function HomeHero() {
                     </h1>
 
                     <h2 className="text-lg md:text-xl font-semibold text-gray-500 dark:text-gray-300">
-                        Frontend & Fullstack Developer
+                        Software Engineer | Full-Stack JavaScript
                     </h2>
 
                     <p className="text-gray-500 text-sm md:text-base leading-relaxed dark:text-gray-300">
-                        Building modern web applications with clean UI and great performance.
+                        Building production web applications with React, Next.js,
+                        TypeScript, and Node.js.
                         <br />
-                        Frontend-focused Full-Stack Developer using React and Next.js.
-                        <br />
-                        Focused on creating scalable and user-friendly products.
+                        Experienced across frontend and backend development, APIs,
+                        databases, testing, and modern development workflows.
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-                        <Link href='/projects' className="flex items-center gap-2 bg-black text-white px-6 py-3 rounded-md hover:bg-gray-800 transition text-sm font-medium cursor-pointer dark:bg-gray-100 dark:text-black hover:dark:bg-gray-200">
+                        <Link
+                            href="/projects"
+                            className="flex items-center gap-2 bg-black text-white px-6 py-3 rounded-md hover:bg-gray-800 transition text-sm font-medium cursor-pointer dark:bg-gray-100 dark:text-black hover:dark:bg-gray-200"
+                        >
                             View My Work
                             <ArrowRight size={16} />
                         </Link>
@@ -42,7 +45,8 @@ function HomeHero() {
                         <a
                             href="/Fullstack-Developer-CV.pdf"
                             download
-                            className="flex items-center gap-2 border border-gray-300 text-gray-700 px-6 py-3 rounded-md hover:bg-gray-100 transition text-sm font-medium cursor-pointer dark:text-gray-100 hover:dark:text-gray-300 hover:dark:bg-transparent dark:border-gray-500 hover:dark:border-gray-400">
+                            className="flex items-center gap-2 border border-gray-300 text-gray-700 px-6 py-3 rounded-md hover:bg-gray-100 transition text-sm font-medium cursor-pointer dark:text-gray-100 hover:dark:text-gray-300 hover:dark:bg-transparent dark:border-gray-500 hover:dark:border-gray-400"
+                        >
                             <Download size={16} />
                             Download CV
                         </a>

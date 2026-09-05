@@ -2,19 +2,56 @@ function SkillsSection() {
     const skills = [
         {
             title: "Frontend",
-            items: ["React", "Next.js", "TypeScript", "Redux", "Tailwind", "SCSS"]
+            items: [
+                "React",
+                "Next.js",
+                "TypeScript",
+                "JavaScript",
+                "Redux Toolkit",
+                "HTML5",
+                "CSS3",
+                "Tailwind CSS",
+                "SCSS"
+            ]
         },
         {
-            title: "Backend",
-            items: ["Node.js", "Express", "MongoDB", "PostgreSQL"]
+            title: "Backend & Data",
+            items: [
+                "Node.js",
+                "Express.js",
+                "REST APIs",
+                "GraphQL",
+                "PostgreSQL",
+                "SQL",
+                "MongoDB",
+                "Firebase"
+            ]
         },
         {
-            title: "APIs & Architecture",
-            items: ["REST", "GraphQL", "JWT"]
+            title: "Testing",
+            items: [
+                "Jest",
+                "Vitest",
+                "React Testing Library",
+                "Supertest",
+                "Unit Testing",
+                "Integration Testing",
+                "API Testing"
+            ]
         },
         {
-            title: "Tools",
-            items: ["Git", "Docker", "Vercel", "Figma"]
+            title: "Tools & Practices",
+            items: [
+                "Git",
+                "GitHub",
+                "Docker",
+                "Jira",
+                "Jenkins",
+                "CI/CD Workflows",
+                "Agile/Scrum",
+                "Code Reviews",
+                "Postman"
+            ]
         }
     ];
 
