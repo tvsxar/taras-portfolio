@@ -1,34 +1,23 @@
 export const projects = [
   {
     id: 1,
-    title: "Mini Blog",
+    title: "Career Flow (Hirepath)",
     description:
-      "A simple blogging platform built with Next.js and MongoDB, allowing users to create, edit, and share their thoughts in a clean and intuitive interface.",
-    image: "/Blog.png",
-    link: "https://mini-blog-backend-6rg8.onrender.com/",
-    code: "https://github.com/tvsxar/mini-blog",
+      "Hirepath helps users organize their job search, track applications throughout the hiring process, and monitor key job-search metrics from a centralized dashboard.",
+    image: "/Hirepath.png",
+    link: "https://hirepath-0nzq.onrender.com/",
+    code: "https://github.com/tvsxar/career-flow",
     techs: [
+      "TypeScript",
       "React",
-      "Tailwind",
-      "MongoDB",
       "Express",
-      "Node.js",
+      "Playwright",
+      "MongoDB",
       "Docker",
-      "REST APIs",
     ],
   },
   {
     id: 2,
-    title: "Feedback Wall (Flowly)",
-    description:
-      "A feedback collection tool designed to help businesses gather and analyze customer feedback effectively, providing insights to improve products and services.",
-    image: "/Feedback.png",
-    link: "https://feedback-wall-next.onrender.com/",
-    code: "https://github.com/tvsxar/feedback-wall",
-    techs: ["Next.js", "Tailwind", "MongoDB", "REST APIs", "Docker"],
-  },
-  {
-    id: 3,
     title: "Expense Flow (Spendly)",
     description:
       "An expense tracking application that allows users to manage their finances by categorizing expenses, setting budgets, and visualizing spending patterns through interactive charts.",
@@ -48,9 +37,38 @@ export const projects = [
     ],
   },
   {
+    id: 3,
+    title: "Feedback Wall (Flowly)",
+    description:
+      "A feedback collection tool designed to help businesses gather and analyze customer feedback effectively, providing insights to improve products and services.",
+    image: "/Feedback.png",
+    link: "https://feedback-wall-next.onrender.com/",
+    code: "https://github.com/tvsxar/feedback-wall",
+    techs: ["Next.js", "Tailwind", "MongoDB", "REST APIs", "Docker"],
+  },
+  {
     id: 4,
+    title: "Mini Blog",
+    description:
+      "A simple blogging platform built with Next.js and MongoDB, allowing users to create, edit, and share their thoughts in a clean and intuitive interface.",
+    image: "/Blog.png",
+    link: "https://mini-blog-backend-6rg8.onrender.com/",
+    code: "https://github.com/tvsxar/mini-blog",
+    techs: [
+      "React",
+      "Tailwind",
+      "MongoDB",
+      "Express",
+      "Node.js",
+      "Docker",
+      "REST APIs",
+    ],
+  },
+  {
+    id: 5,
     title: "Movie Hub",
-    description: "A movie discovery platform that integrates with the TMDB API to provide users with a comprehensive database of movies. Users can search for movies, view details, and create personalized watchlists.",
+    description:
+      "A movie discovery platform that integrates with the TMDB API to provide users with a comprehensive database of movies. Users can search for movies, view details, and create personalized watchlists.",
     image: "/MovieHub.png",
     link: "https://movie-hub-next.onrender.com/",
     code: "https://github.com/tvsxar/movie-hub",
@@ -62,12 +80,13 @@ export const projects = [
       "Tailwind",
       "MongoDB",
       "Docker",
-    ], 
+    ],
   },
   {
-    id: 5,
+    id: 6,
     title: "Weather Forecast",
-    description: "A weather application that provides real-time weather information, city search suggestions, and server-side caching for faster responses.",
+    description:
+      "A weather application that provides real-time weather information, city search suggestions, and server-side caching for faster responses.",
     image: "/Weather.png",
     link: "https://weather-forecast-frontend-3w4a.onrender.com/",
     code: "https://github.com/tvsxar/weather-forecast",
@@ -79,12 +98,13 @@ export const projects = [
       "SCSS",
       "OpenWeatherMap API",
       "Context API",
-    ], 
+    ],
   },
   {
-    id: 6,
+    id: 7,
     title: "Task Tracker",
-    description: "A full-featured task management application that allows users to create, edit, delete, and complete tasks, with real-time frontend filtering for 'all', 'pending', and 'completed' tasks, and a responsive, modern UI.",
+    description:
+      "A full-featured task management application that allows users to create, edit, delete, and complete tasks, with real-time frontend filtering for 'all', 'pending', and 'completed' tasks, and a responsive, modern UI.",
     image: "/TaskTracker.png",
     link: "https://task-tracker-frontend-j0ko.onrender.com/",
     code: "https://github.com/tvsxar/task-tracker",
@@ -97,12 +117,13 @@ export const projects = [
       "Tailwind",
       "Nginx",
       "Docker",
-    ], 
+    ],
   },
   {
-    id: 7,
+    id: 8,
     title: "Secure Notes (Notedly)",
-    description: "A secure notes application allows users to register, log in, and manage private notes with full CRUD operations, search functionality, and a modern responsive UI.",
+    description:
+      "A secure notes application allows users to register, log in, and manage private notes with full CRUD operations, search functionality, and a modern responsive UI.",
     image: "/SecureNotes.png",
     link: "https://secure-notes-backend-icl1.onrender.com/",
     code: "https://github.com/tvsxar/secure-notes",
@@ -115,12 +136,13 @@ export const projects = [
       "Tailwind",
       "axios",
       "Docker",
-    ], 
+    ],
   },
   {
-    id: 8,
+    id: 9,
     title: "Mini-CRM",
-    description: "A small CRM demonstrates a simple system for managing customer data with CRUD operations, server-side pagination, search, sorting, and a simple UI for managing customers.",
+    description:
+      "A small CRM demonstrates a simple system for managing customer data with CRUD operations, server-side pagination, search, sorting, and a simple UI for managing customers.",
     image: "/Mini-CRM.png",
     link: "https://mini-crm-frontend-exsv.onrender.com/",
     code: "https://github.com/tvsxar/mini-crm",
@@ -132,18 +154,16 @@ export const projects = [
       "Tailwind",
       "axios",
       "Docker",
-    ], 
+    ],
   },
   {
-    id: 9,
+    id: 10,
     title: "Eatly Landing",
-    description: "An example of landing designed with React & styled with Scss, it displays few sections with customers, feedback and different buttons.",
+    description:
+      "An example of landing designed with React & styled with Scss, it displays few sections with customers, feedback and different buttons.",
     image: "/Eatly.png",
     link: "https://eatly-web.netlify.app/",
     code: "https://github.com/tvsxar/eatly-website",
-    techs: [
-      "React",
-      "SCSS",
-    ], 
-  }
+    techs: ["React", "SCSS"],
+  },
 ];
