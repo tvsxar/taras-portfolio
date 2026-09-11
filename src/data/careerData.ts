@@ -30,6 +30,7 @@ export const careerData = [
             "Next.js",
             "TypeScript",
             "Express",
+            "GraphQL",
             "Electron",
             "Node.js",
             "Firebase",

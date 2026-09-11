@@ -15,7 +15,10 @@ function TechStack() {
         "Jest",
         "Vitest",
         "Docker",
-        "Git"
+        "Git",
+        "Playwright",
+        "Supertest",
+        "CI/CD",
     ];
 
     return (
