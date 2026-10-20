@@ -8,6 +8,7 @@ function SkillsSection() {
                 "TypeScript",
                 "JavaScript",
                 "Redux Toolkit",
+                "TanStack Query",
                 "HTML5",
                 "CSS3",
                 "Tailwind CSS",
@@ -24,7 +25,8 @@ function SkillsSection() {
                 "PostgreSQL",
                 "SQL",
                 "MongoDB",
-                "Firebase"
+                "Firebase",
+                "Prisma",
             ]
         },
         {
@@ -34,9 +36,11 @@ function SkillsSection() {
                 "Vitest",
                 "React Testing Library",
                 "Supertest",
+                "Playwright",
                 "Unit Testing",
                 "Integration Testing",
-                "API Testing"
+                "API Testing",
+                "E2E Testing"
             ]
         },
         {
@@ -47,7 +51,7 @@ function SkillsSection() {
                 "Docker",
                 "Jira",
                 "Jenkins",
-                "CI/CD Workflows",
+                "CI/CD",
                 "Agile/Scrum",
                 "Code Reviews",
                 "Postman"

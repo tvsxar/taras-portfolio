@@ -2,7 +2,7 @@ export const careerData = [
     {
         id: 1,
         title: "Freelance Frontend Developer",
-        company: "Upwork",
+        company: "Self-Employed",
         duration: "Aug 2025 - Dec 2025",
         location: "Remote",
         description:

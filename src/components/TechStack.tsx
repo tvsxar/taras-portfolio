@@ -8,6 +8,7 @@ function TechStack() {
         "Express.js",
         "MongoDB",
         "PostgreSQL",
+        "Prisma",
         "REST APIs",
         "GraphQL",
         "Firebase",

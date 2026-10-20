@@ -1,6 +1,6 @@
 export const projects = [
   {
-    id: 1,
+    id: 10,
     title: "Career Flow (Hirepath)",
     description:
       "Hirepath helps users organize their job search, track applications throughout the hiring process, and monitor key job-search metrics from a centralized dashboard.",
@@ -17,7 +17,7 @@ export const projects = [
     ],
   },
   {
-    id: 2,
+    id: 9,
     title: "Expense Flow (Spendly)",
     description:
       "An expense tracking application that allows users to manage their finances by categorizing expenses, setting budgets, and visualizing spending patterns through interactive charts.",
@@ -37,7 +37,7 @@ export const projects = [
     ],
   },
   {
-    id: 3,
+    id: 8,
     title: "Feedback Wall (Flowly)",
     description:
       "A feedback collection tool designed to help businesses gather and analyze customer feedback effectively, providing insights to improve products and services.",
@@ -47,7 +47,7 @@ export const projects = [
     techs: ["Next.js", "Tailwind", "MongoDB", "REST APIs", "Docker"],
   },
   {
-    id: 4,
+    id: 7,
     title: "Mini Blog",
     description:
       "A simple blogging platform built with Next.js and MongoDB, allowing users to create, edit, and share their thoughts in a clean and intuitive interface.",
@@ -65,7 +65,7 @@ export const projects = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     title: "Movie Hub",
     description:
       "A movie discovery platform that integrates with the TMDB API to provide users with a comprehensive database of movies. Users can search for movies, view details, and create personalized watchlists.",
@@ -83,7 +83,7 @@ export const projects = [
     ],
   },
   {
-    id: 6,
+    id: 5,
     title: "Weather Forecast",
     description:
       "A weather application that provides real-time weather information, city search suggestions, and server-side caching for faster responses.",
@@ -101,7 +101,7 @@ export const projects = [
     ],
   },
   {
-    id: 7,
+    id: 4,
     title: "Task Tracker",
     description:
       "A full-featured task management application that allows users to create, edit, delete, and complete tasks, with real-time frontend filtering for 'all', 'pending', and 'completed' tasks, and a responsive, modern UI.",
@@ -120,7 +120,7 @@ export const projects = [
     ],
   },
   {
-    id: 8,
+    id: 3,
     title: "Secure Notes (Notedly)",
     description:
       "A secure notes application allows users to register, log in, and manage private notes with full CRUD operations, search functionality, and a modern responsive UI.",
@@ -139,7 +139,7 @@ export const projects = [
     ],
   },
   {
-    id: 9,
+    id: 2,
     title: "Mini-CRM",
     description:
       "A small CRM demonstrates a simple system for managing customer data with CRUD operations, server-side pagination, search, sorting, and a simple UI for managing customers.",
@@ -157,7 +157,7 @@ export const projects = [
     ],
   },
   {
-    id: 10,
+    id: 1,
     title: "Eatly Landing",
     description:
       "An example of landing designed with React & styled with Scss, it displays few sections with customers, feedback and different buttons.",
@@ -165,5 +165,24 @@ export const projects = [
     link: "https://eatly-web.netlify.app/",
     code: "https://github.com/tvsxar/eatly-website",
     techs: ["React", "SCSS"],
+  },
+  {
+    id: 11,
+    title: "Stock Core",
+    description:
+      "Stock Core helps manage products, track inventory movements, and monitor available stock through a simple and centralized interface.",
+    image: "/StockCore.png",
+    link: "https://stock-core-client.onrender.com",
+    code: "https://github.com/tvsxar/stock-core",
+    techs: [
+      "React",
+      "Express",
+      "Prisma",
+      "TanStack Query",
+      "PostgreSQL",
+      "Node.js",
+      "Docker",
+      "REST APIs",
+    ],
   },
 ];
