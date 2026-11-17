@@ -31,5 +31,55 @@ body {
 }
 
 .animate-scroll {
-  animation: scroll 60s linear infinite;
+  animation: scroll 75s linear infinite;
+}
+
+@media (hover: hover) {
+  .animate-scroll:hover {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes page-enter {
+  from {
+    opacity: 0.65;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .page-enter {
+    animation: page-enter 180ms ease-out both;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-scroll {
+    animation: none;
+  }
+}
+
+@keyframes theme-reveal {
+  from {
+    clip-path: circle(0 at var(--theme-reveal-origin));
+  }
+  to {
+    clip-path: circle(var(--theme-reveal-radius) at var(--theme-reveal-origin));
+  }
+}
+
+html[data-theme-transition]::view-transition {
+  pointer-events: none;
+}
+
+html[data-theme-transition]::view-transition-old(root),
+html[data-theme-transition]::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+html[data-theme-transition]::view-transition-new(root) {
+  animation: theme-reveal 300ms ease-out both;
 }

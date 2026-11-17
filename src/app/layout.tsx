@@ -12,8 +12,8 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Taras Poiatsyka | Fullstack Developer",
-  description: "Portfolio of Taras Poiatsyka – Fullstack Developer skilled in React, Next.js, TypeScript, Node.js, Express, MongoDB, PostgreSQL",
+  title: "Taras Poiatsyka | Full-Stack Software Engineer",
+  description: "Portfolio of Taras Poiatsyka, a full-stack software engineer with commercial experience in React, Next.js, TypeScript, and Node.js.",
 };
 
 export default function RootLayout({

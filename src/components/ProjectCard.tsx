@@ -31,7 +31,8 @@ function ProjectCard({ project }: ProjectCardProps) {
                 flex-col
                 transition-all
                 duration-200
-                hover:-translate-y-1
+                motion-safe:hover:-translate-y-1
+                motion-reduce:transition-none
                 hover:shadow-lg
             "
         >
@@ -40,7 +41,7 @@ function ProjectCard({ project }: ProjectCardProps) {
                     src={image}
                     alt={title}
                     fill
-                    className="object-cover"
+                    className="object-cover motion-safe:transition-transform motion-safe:duration-300 motion-safe:group-hover:scale-105"
                 />
             </div>
 
@@ -121,6 +122,7 @@ function ProjectCard({ project }: ProjectCardProps) {
                     <a
                         href={link}
                         className="
+                            group/live
                             flex
                             items-center
                             justify-center
@@ -136,7 +138,10 @@ function ProjectCard({ project }: ProjectCardProps) {
                             transition-colors
                         "
                     >
-                        <ArrowUpRight size={16} />
+                        <ArrowUpRight
+                            size={16}
+                            className="motion-safe:transition-transform motion-safe:group-hover/live:translate-x-0.5 motion-safe:group-hover/live:-translate-y-0.5 motion-safe:group-focus-visible/live:translate-x-0.5 motion-safe:group-focus-visible/live:-translate-y-0.5"
+                        />
                         Live
                     </a>
                 </div>

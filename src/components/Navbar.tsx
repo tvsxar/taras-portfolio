@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, type MouseEvent as ReactMouseEvent } from 'react';
 import { usePathname } from 'next/navigation';
 import { Sun, Menu, X } from 'lucide-react';
 
@@ -15,9 +15,40 @@ function Navbar() {
         setIsMobileMenuOpen((prev) => !prev);
     }
 
-    const handleChangeTheme = () => {
-        document.documentElement.classList.toggle('dark');
-    }
+    const handleChangeTheme = (event: ReactMouseEvent<HTMLButtonElement>) => {
+        const root = document.documentElement;
+        if (root.hasAttribute('data-theme-transition')) return;
+
+        const toggleTheme = () => {
+            root.classList.toggle('dark');
+        };
+
+        if (!document.startViewTransition || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            toggleTheme();
+            return;
+        }
+
+        const button = event.currentTarget.getBoundingClientRect();
+        const x = button.left + button.width / 2;
+        const y = button.top + button.height / 2;
+        const radius = Math.ceil(Math.hypot(
+            Math.max(x, root.clientWidth - x),
+            Math.max(y, root.clientHeight - y),
+        ));
+
+        root.style.setProperty('--theme-reveal-origin', `${x}px ${y}px`);
+        root.style.setProperty('--theme-reveal-radius', `${radius}px`);
+        root.setAttribute('data-theme-transition', '');
+
+        const transition = document.startViewTransition(toggleTheme);
+        const cleanup = () => {
+            root.removeAttribute('data-theme-transition');
+            root.style.removeProperty('--theme-reveal-origin');
+            root.style.removeProperty('--theme-reveal-radius');
+        };
+
+        void transition.finished.then(cleanup, cleanup);
+    };
 
     useEffect(() => {
         const media = window.matchMedia('(prefers-color-scheme: dark)');
@@ -52,6 +83,8 @@ function Navbar() {
                 <div className="flex items-center gap-5 md:hidden">
                     <div className="items-center flex md:hidden">
                         <button
+                            type="button"
+                            aria-label="Toggle color theme"
                             onClick={handleChangeTheme}
                             className="cursor-pointer text-gray-700 dark:text-gray-100 hover:text-black dark:hover:text-gray-300 transition-colors">
                             <Sun size={20} />
@@ -168,6 +201,8 @@ function Navbar() {
 
                 <div className="items-center hidden md:flex">
                     <button
+                        type="button"
+                        aria-label="Toggle color theme"
                         onClick={handleChangeTheme}
                         className="cursor-pointer text-gray-700 dark:text-gray-100 hover:text-black dark:hover:text-gray-300 transition-colors">
                         <Sun size={20} />

@@ -3,10 +3,10 @@ export const careerData = [
         id: 1,
         title: "Freelance Frontend Developer",
         company: "Self-Employed",
-        duration: "Aug 2025 - Dec 2025",
+        duration: "Mar 2025 – Present",
         location: "Remote",
         description:
-            "Worked with clients on responsive web interfaces and existing applications, turning Figma designs into reusable React components and new UI functionality. Integrated REST APIs, implemented forms and client-side validation, handled asynchronous data flows, and made changes to existing Node.js and MongoDB functionality when required. Worked directly with clients to clarify requirements, estimate implementation effort, and deliver changes based on feedback.",
+            "Deliver responsive websites and application features directly for clients, from clarifying requirements and interpreting Figma designs through revisions and delivery. Build reusable React components, integrate REST APIs, and implement interactive forms with client-side validation. Maintain existing applications by fixing bugs and refining responsive layouts.",
         techs: [
             "React",
             "JavaScript",
@@ -19,12 +19,12 @@ export const careerData = [
     },
     {
         id: 2,
-        title: "Frontend Developer",
+        title: "Full-Stack Developer",
         company: "Axels",
-        duration: "Dec 2025 - Aug 2026",
+        duration: "Dec 2025 – Nov 2026",
         location: "Remote",
         description:
-            "Developed and maintained commercial web and desktop applications using React, Next.js, TypeScript, Electron, and Node.js. Built reusable frontend components, delivered new functionality, and fixed production issues across existing applications. Developed backend functionality and API endpoints with Node.js and Firebase, working with authentication, chat functionality, subscriptions, and application data. Wrote unit tests with Jest and worked in Agile/Scrum teams using Jira, Git-based workflows, peer code reviews, CI/CD workflows, and Jenkins.",
+            "Built pages and features for a European e-commerce platform and contributed to performance improvements and production fixes. Worked on real-time messaging for web and desktop apps, including GraphQL subscriptions, message storage, and synchronization. Developed backend functionality with Node.js, Express, and Firebase, and worked with developers and QA on testing, debugging, and releases.",
         techs: [
             "React",
             "Next.js",

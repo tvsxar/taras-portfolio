@@ -1,33 +1,44 @@
 function SkillsSection() {
     const skills = [
         {
+            title: "Languages",
+            items: [
+                "TypeScript",
+                "JavaScript (ES6+)",
+                "SQL",
+            ],
+        },
+        {
             title: "Frontend",
             items: [
                 "React",
                 "Next.js",
-                "TypeScript",
-                "JavaScript",
                 "Redux Toolkit",
                 "TanStack Query",
                 "HTML5",
                 "CSS3",
                 "Tailwind CSS",
-                "SCSS"
-            ]
+                "SCSS",
+            ],
         },
         {
-            title: "Backend & Data",
+            title: "Backend",
             items: [
                 "Node.js",
                 "Express.js",
                 "REST APIs",
                 "GraphQL",
+                "Zod",
+            ],
+        },
+        {
+            title: "Databases & ORM",
+            items: [
                 "PostgreSQL",
-                "SQL",
                 "MongoDB",
-                "Firebase",
                 "Prisma",
-            ]
+                "Firebase",
+            ],
         },
         {
             title: "Testing",
@@ -37,26 +48,19 @@ function SkillsSection() {
                 "React Testing Library",
                 "Supertest",
                 "Playwright",
-                "Unit Testing",
-                "Integration Testing",
-                "API Testing",
-                "E2E Testing"
-            ]
+            ],
         },
         {
-            title: "Tools & Practices",
+            title: "DevOps & Tools",
             items: [
-                "Git",
-                "GitHub",
                 "Docker",
-                "Jira",
+                "Docker Compose",
+                "Git",
+                "GitHub Actions",
                 "Jenkins",
-                "CI/CD",
-                "Agile/Scrum",
-                "Code Reviews",
-                "Postman"
-            ]
-        }
+                "Postman",
+            ],
+        },
     ];
 
     return (
