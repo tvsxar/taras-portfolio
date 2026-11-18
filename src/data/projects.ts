@@ -3,7 +3,7 @@ export const projects = [
     id: 10,
     title: "Career Flow (Hirepath)",
     description:
-      "Hirepath helps users organize their job search, track applications throughout the hiring process, and monitor key job-search metrics from a centralized dashboard.",
+      "Track job applications from submission to final decision and see where they stand in an analytics dashboard. Playwright covers key workflows, and GitHub Actions automates deployment.",
     image: "/Hirepath.png",
     link: "https://hirepath-0nzq.onrender.com/",
     code: "https://github.com/tvsxar/career-flow",
@@ -20,7 +20,7 @@ export const projects = [
     id: 9,
     title: "Expense Flow (Spendly)",
     description:
-      "An expense tracking application that allows users to manage their finances by categorizing expenses, setting budgets, and visualizing spending patterns through interactive charts.",
+      "Track expenses by category, set budgets, and explore spending patterns with interactive charts. A GraphQL API connects the dashboard to expense and budget data.",
     image: "/Expense.png",
     link: "https://expense-flow-backend-8m66.onrender.com/",
     code: "https://github.com/tvsxar/expense-flow",
@@ -40,7 +40,7 @@ export const projects = [
     id: 8,
     title: "Feedback Wall (Flowly)",
     description:
-      "A feedback collection tool designed to help businesses gather and analyze customer feedback effectively, providing insights to improve products and services.",
+      "Submit categorized product ideas and bug reports with an optional name, then browse submissions on a shared feedback wall. A Next.js REST API stores feedback in MongoDB.",
     image: "/Feedback.png",
     link: "https://feedback-wall-next.onrender.com/",
     code: "https://github.com/tvsxar/feedback-wall",
@@ -50,7 +50,7 @@ export const projects = [
     id: 7,
     title: "Mini Blog",
     description:
-      "A simple blogging platform built with Next.js and MongoDB, allowing users to create, edit, and share their thoughts in a clean and intuitive interface.",
+      "A publishing app with a public article feed and accounts for writing and editing posts. A React frontend connects to an Express API backed by MongoDB.",
     image: "/Blog.png",
     link: "https://mini-blog-backend-6rg8.onrender.com/",
     code: "https://github.com/tvsxar/mini-blog",
@@ -68,7 +68,7 @@ export const projects = [
     id: 6,
     title: "Movie Hub",
     description:
-      "A movie discovery platform that integrates with the TMDB API to provide users with a comprehensive database of movies. Users can search for movies, view details, and create personalized watchlists.",
+      "Search the TMDB catalog, open movie detail pages, and save titles to a personal watchlist. The Next.js app combines live catalog data with watchlists stored in MongoDB.",
     image: "/MovieHub.png",
     link: "https://movie-hub-next.onrender.com/",
     code: "https://github.com/tvsxar/movie-hub",
@@ -86,7 +86,7 @@ export const projects = [
     id: 5,
     title: "Weather Forecast",
     description:
-      "A weather application that provides real-time weather information, city search suggestions, and server-side caching for faster responses.",
+      "Find a city with autocomplete and check current conditions from OpenWeatherMap. Server-side caching reduces repeated requests for the same location.",
     image: "/Weather.png",
     link: "https://weather-forecast-frontend-3w4a.onrender.com/",
     code: "https://github.com/tvsxar/weather-forecast",
@@ -104,7 +104,7 @@ export const projects = [
     id: 4,
     title: "Task Tracker",
     description:
-      "A full-featured task management application that allows users to create, edit, delete, and complete tasks, with real-time frontend filtering for 'all', 'pending', and 'completed' tasks, and a responsive, modern UI.",
+      "Create, edit, and complete tasks, then switch instantly between all, pending, and completed views. An Express REST API saves task changes in MongoDB.",
     image: "/TaskTracker.png",
     link: "https://task-tracker-frontend-j0ko.onrender.com/",
     code: "https://github.com/tvsxar/task-tracker",
@@ -123,7 +123,7 @@ export const projects = [
     id: 3,
     title: "Secure Notes (Notedly)",
     description:
-      "A secure notes application allows users to register, log in, and manage private notes with full CRUD operations, search functionality, and a modern responsive UI.",
+      "Create, edit, and search private notes in a personal workspace. An Express API uses JWT authentication for account access and stores notes in PostgreSQL.",
     image: "/SecureNotes.png",
     link: "https://secure-notes-backend-icl1.onrender.com/",
     code: "https://github.com/tvsxar/secure-notes",
@@ -142,7 +142,7 @@ export const projects = [
     id: 2,
     title: "Mini-CRM",
     description:
-      "A small CRM demonstrates a simple system for managing customer data with CRUD operations, server-side pagination, search, sorting, and a simple UI for managing customers.",
+      "Manage customer records in a searchable, sortable directory. The Express API handles pagination, search, and sorting against PostgreSQL so the React client only loads the current page.",
     image: "/Mini-CRM.png",
     link: "https://mini-crm-frontend-exsv.onrender.com/",
     code: "https://github.com/tvsxar/mini-crm",
@@ -160,7 +160,7 @@ export const projects = [
     id: 1,
     title: "Eatly Landing",
     description:
-      "An example of landing designed with React & styled with Scss, it displays few sections with customers, feedback and different buttons.",
+      "A food delivery landing page built with React and SCSS, pairing a hero with layered product visuals, customer testimonials, and clear sign-up calls to action.",
     image: "/Eatly.png",
     link: "https://eatly-web.netlify.app/",
     code: "https://github.com/tvsxar/eatly-website",
@@ -170,7 +170,7 @@ export const projects = [
     id: 11,
     title: "Stock Core",
     description:
-      "Stock Core helps manage products, track inventory movements, and monitor available stock through a simple and centralized interface.",
+      "Manage a product catalog, record stock movements, and see current quantities by SKU. The inventory dashboard highlights low-stock and out-of-stock items so they are easy to spot.",
     image: "/StockCore.png",
     link: "https://stock-core-client.onrender.com",
     code: "https://github.com/tvsxar/stock-core",
@@ -185,4 +185,23 @@ export const projects = [
       "REST APIs",
     ],
   },
+  {
+    id: 12,
+    title: "Credit Wallet",
+    description:
+      "Buy credit packs with Stripe Checkout and review your balance and transaction history. Idempotent webhooks and PostgreSQL row locks prevent duplicate credits when payment events are retried.",
+    image: "/CreditWallet.png",
+    link: "https://credit-wallet.vercel.app/",
+    code: "https://github.com/tvsxar/credit-wallet",
+    techs: [
+      "React",
+      "Express",
+      "TypeScript",
+      "Stripe",
+      "Better Auth",
+      "PostgreSQL",
+      "Node.js",
+      "Docker",
+    ],
+  }
 ];
